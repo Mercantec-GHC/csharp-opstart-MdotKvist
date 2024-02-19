@@ -1,3 +1,2 @@
-﻿string firstName = "Bob";
-string message = "Hello " + firstName;
-Console.WriteLine(message);
+﻿string projectName = "First-Project";
+Console.WriteLine($@"C:\Output\{projectName}\Data");
