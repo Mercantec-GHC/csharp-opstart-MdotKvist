@@ -31,13 +31,13 @@ int nicolasSum = nicolas1 + nicolas2 + nicolas3 + nicolas4 + nicolas5;
 int zahirahSum = zahirah1 + zahirah2 + zahirah3 + zahirah4 + zahirah5;
 int jeongSum = jeong1 + jeong2 + jeong3 + jeong4 + jeong5;
 
-decimal sophiaScore = sophiaSum / currentAssignments;
-decimal nicolasScore = nicolasSum / currentAssignments;
-decimal zahirahScore = zahirahSum / currentAssignments;
-decimal jeongScore = jeongSum / currentAssignments;
+decimal sophiaScore = (decimal) sophiaSum / currentAssignments;
+decimal nicolasScore = (decimal) nicolasSum / currentAssignments;
+decimal zahirahScore = (decimal) zahirahSum / currentAssignments;
+decimal jeongScore = (decimal) jeongSum / currentAssignments;
 
-Console.WriteLine("Sophia: " + sophiaScore);
-Console.WriteLine("Nicolas: " + nicolasScore);
-Console.WriteLine("Zahriah: " + zahirahScore);
-Console.WriteLine("Jeong: " + jeongScore);
+Console.WriteLine("Sophia: " + sophiaScore + " A");
+Console.WriteLine("Nicolas: " + nicolasScore + " B");
+Console.WriteLine("Zahriah: " + zahirahScore + " B");
+Console.WriteLine("Jeong: " + jeongScore + " A");
 
