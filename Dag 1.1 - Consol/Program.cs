@@ -1,2 +1,2 @@
-﻿int firstName;
+﻿string firstName;
 firstName = "Bob";
