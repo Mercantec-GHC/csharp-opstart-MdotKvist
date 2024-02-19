@@ -1,5 +1,2 @@
-﻿Console.WriteLine("Hello World");
-// Console.WriteLine("Hello World");
-Console.Write("Congratulations!");
-Console.Write(" ");
-Console.Write("You wrote your first line");
+﻿Console.WriteLine("This is the first line.");
+Console.WriteLine("This is the second line.");
