@@ -75,7 +75,7 @@ Console.WriteLine("\n\n");
 
 
 Random random = new Random();
-int daysUntilExpiration = 1; //random.Next(12);
+int daysUntilExpiration = random.Next(12);
 int discountPercentage = 0;
 
 if (daysUntilExpiration <= 0)
