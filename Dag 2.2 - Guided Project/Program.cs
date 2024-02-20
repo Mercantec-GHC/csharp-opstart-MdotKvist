@@ -121,6 +121,7 @@ foreach (string name in studentNames)
     Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t{currentStudentLetterGrade}");
 }
 
+
 Console.WriteLine("\n\rPress the Enter key to continue");
 Console.ReadLine();
 
