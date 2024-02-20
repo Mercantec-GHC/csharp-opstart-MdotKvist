@@ -148,3 +148,18 @@ foreach (int items in inventory)
 
 Console.WriteLine($"We have {sum} item in inventory.");
 
+
+
+
+//WhiteSpace
+Console.WriteLine("\n\n");
+
+
+string[] fraudulenOrderID = { "B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179" };
+foreach (string id  in fraudulenOrderID)
+{
+    if (id.StartsWith("B"))
+    {
+        Console.WriteLine($"{id}");
+    }
+}
