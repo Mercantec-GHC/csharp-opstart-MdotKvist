@@ -21,15 +21,29 @@ else
 }
 
 
-if ( total >= 15 )
+if ( total >= 16 )
 {
-    Console.WriteLine("You win");
+    Console.WriteLine("You win a new car!");
+}
+
+else if ( total >= 10)
+{
+    Console.WriteLine("You win a new laptop!");
+}
+
+else if ( total == 7)
+{
+    Console.WriteLine("You win a trip for two!");
 }
 
 else
 {
-    Console.WriteLine("Sorry, you lose.");
+    Console.WriteLine("You win a kitten!");
 }
+
+
+
+
 
 int firstValue = 500;
 int secondValue = 600;
