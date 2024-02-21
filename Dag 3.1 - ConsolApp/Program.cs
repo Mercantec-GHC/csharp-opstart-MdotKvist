@@ -220,23 +220,47 @@
 //    Console.WriteLine("Hero wins!");
 //}
 
+//using System;
+
+//int userInput;
+//bool isValid = false;
+
+//do
+//{
+//    Console.WriteLine("Indtast et heltal:");
+//    string input = Console.ReadLine();
+
+//    isValid = int.TryParse(input, out userInput);
+
+//    if (!isValid)
+//    {
+//        Console.WriteLine("Ugyldigt input. Prøv igen.");
+//    }
+//} while (!isValid);
+
+//Console.WriteLine("Du har indtastet: " + userInput);
+
 using System;
 
-int userInput;
-bool isValid = false;
-
-do
+class Program
 {
-    Console.WriteLine("Indtast et heltal:");
-    string input = Console.ReadLine();
-
-    isValid = int.TryParse(input, out userInput);
-
-    if (!isValid)
+    static void Main()
     {
-        Console.WriteLine("Ugyldigt input. Prøv igen.");
+        string userInput;
+
+        Console.WriteLine("Please enter your role (Administrator, Manager, or User):");
+
+        do
+        {
+            userInput = Console.ReadLine().Trim().ToLower();
+
+            if (userInput != "administrator" && userInput != "manager" && userInput != "user")
+            {
+                Console.WriteLine("Invalid input. Please enter a valid role (Administrator, Manager, or User):");
+            }
+
+        } while (userInput != "administrator" && userInput != "manager" && userInput != "user");
+
+        Console.WriteLine("You entered: " + userInput);
     }
-} while (!isValid);
-
-Console.WriteLine("Du har indtastet: " + userInput);
-
+}
