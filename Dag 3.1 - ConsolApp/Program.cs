@@ -158,20 +158,38 @@
 
 
 
-for (int i = 1; i < 101; i++){
-    if (i % 3 == 0 && (i % 5 == 0)  )
-    {
-        Console.WriteLine($"{i} - FizzBuss");
-    }
-    else if (i % 3 == 0)
-    {
-        Console.WriteLine($"{i} - Fizz");       
-    }
-    else if (i % 5 == 0)
-    {
-        Console.WriteLine($"{i} - Buzz");
-    }
-    else { 
-        Console.WriteLine(i);
-    }
+//for (int i = 1; i < 101; i++){
+//    if (i % 3 == 0 && (i % 5 == 0)  )
+//    {
+//        Console.WriteLine($"{i} - FizzBuss");
+//    }
+//    else if (i % 3 == 0)
+//    {
+//        Console.WriteLine($"{i} - Fizz");       
+//    }
+//    else if (i % 5 == 0)
+//    {
+//        Console.WriteLine($"{i} - Buzz");
+//    }
+//    else { 
+//        Console.WriteLine(i);
+//    }
+//}
+
+Random random = new Random();
+int current = random.Next(1, 11);
+
+/*
+do
+{
+    current = random.Next(1, 11);
+    Console.WriteLine(current);
+} while (current != 7);
+*/
+
+while (current >= 3)
+{
+    Console.WriteLine(current);
+    current = random.Next(1, 11);
 }
+Console.WriteLine($"Last number: {current}");
