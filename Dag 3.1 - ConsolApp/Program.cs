@@ -1,55 +1,79 @@
-﻿
-Console.Write("How many coins do you wanna flip?");
-int coinsTotal = Convert.ToInt32(Console.ReadLine());
+﻿//Console.Write("How many coins do you wanna flip?");
+//int coinsTotal = Convert.ToInt32(Console.ReadLine());
 
-for (int i = 0; i < coinsTotal; i++)
+//for (int i = 0; i < coinsTotal; i++)
+//{
+//    Random random = new Random();
+
+//    int randomNumber = random.Next(0, 2);
+
+//    string result = (randomNumber == 0) ? "HEAD" : "TALE";
+
+//    Console.WriteLine($"You flipped a {result}!");
+//}
+
+//Console.Clear();
+
+//string permission = "Admin|Manager";
+//int level = 55;
+
+//if (permission.Contains("Admin") && level > 55)
+//{
+//    Console.WriteLine("Welcome, Super Admin user."); 
+//}
+
+//else if(permission.Contains("Admin") && level <= 55)
+//{
+//    Console.WriteLine("Welcome, Admin user.");
+//}
+
+//else if(permission.Contains("Manager") && level >= 20)
+//{
+//    Console.WriteLine("Contact an Admin for access.");
+//}
+
+//else if(permission.Contains("Manager") && level <= 20)
+//{
+//    Console.WriteLine("You do not have sufficient privileges.");
+//}
+
+//else
+//{
+//    Console.WriteLine("You do not have sufficient privileges.");
+//}
+
+
+
+//Console.Clear();
+
+
+//bool flag = true;
+//int value = 10;
+//if (flag)
+//{
+
+//    Console.WriteLine($"Inside the code block: {value}");
+//}
+//Console.WriteLine($"Outside the code block: {value}");
+
+
+using System;
+
+int[] numbers = { 4, 8, 15, 16, 23, 42 };
+
+int total = 0;
+
+foreach (int number in numbers)
 {
-    Random random = new Random();
 
-    int randomNumber = random.Next(0, 2);
 
-    string result = (randomNumber == 0) ? "HEAD" : "TALE";
+    total += number;
 
-    Console.WriteLine($"You flipped a {result}!");
+    if (number == 42)
+    {
+        Console.WriteLine("Set contains 42");
+    }
+
 }
 
-Console.Clear();
-
-string permission = "Admin|Manager";
-int level = 55;
-
-if (permission.Contains("Admin") && level > 55)
-{
-    Console.WriteLine("Welcome, Super Admin user."); 
-}
-
-else if(permission.Contains("Admin") && level <= 55)
-{
-    Console.WriteLine("Welcome, Admin user.");
-}
-
-else if(permission.Contains("Manager") && level >= 20)
-{
-    Console.WriteLine("Contact an Admin for access.");
-}
-
-else if(permission.Contains("Manager") && level <= 20)
-{
-    Console.WriteLine("You do not have sufficient privileges.");
-}
-
-else
-{
-    Console.WriteLine("You do not have sufficient privileges.");
-}
-
-
-
-Console.Clear();
-
-
-
-
-
-
-
+Console.WriteLine($"Total: {total}");
