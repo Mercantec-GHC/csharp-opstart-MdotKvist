@@ -255,26 +255,27 @@
 
 //Console.WriteLine("You entered: " + userInput);
 
-string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
+//string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
 
-foreach (string myString in myStrings)
-{
-    int periodLocation = myString.IndexOf(".");
+//foreach (string myString in myStrings)
+//{
+//    int periodLocation = myString.IndexOf(".");
 
-    if (periodLocation != -1)
-    {
-        string[] sentences = myString.Split('.');
-        foreach (string sentence in sentences)
-        {
-            string trimmedSentence = sentence.Trim();
-            if (!string.IsNullOrEmpty(trimmedSentence))
-            {
-                Console.WriteLine(trimmedSentence);
-            }
-        }
-    }
-    else
-    {
-        Console.WriteLine(myString.Trim());
-    }
-}
+//    if (periodLocation != -1)
+//    {
+//        string[] sentences = myString.Split('.');
+//        foreach (string sentence in sentences)
+//        {
+//            string trimmedSentence = sentence.Trim();
+//            if (!string.IsNullOrEmpty(trimmedSentence))
+//            {
+//                Console.WriteLine(trimmedSentence);
+//            }
+//        }
+//    }
+//    else
+//    {
+//        Console.WriteLine(myString.Trim());
+//    }
+//}
+
