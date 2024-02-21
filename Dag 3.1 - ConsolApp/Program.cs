@@ -239,28 +239,19 @@
 //} while (!isValid);
 
 //Console.WriteLine("Du har indtastet: " + userInput);
+string userInput;
 
-using System;
+Console.WriteLine("Please enter your role (Administrator, Manager, or User):");
 
-class Program
+do
 {
-    static void Main()
+    userInput = Console.ReadLine().Trim().ToLower();
+
+    if (userInput != "administrator" && userInput != "manager" && userInput != "user")
     {
-        string userInput;
-
-        Console.WriteLine("Please enter your role (Administrator, Manager, or User):");
-
-        do
-        {
-            userInput = Console.ReadLine().Trim().ToLower();
-
-            if (userInput != "administrator" && userInput != "manager" && userInput != "user")
-            {
-                Console.WriteLine("Invalid input. Please enter a valid role (Administrator, Manager, or User):");
-            }
-
-        } while (userInput != "administrator" && userInput != "manager" && userInput != "user");
-
-        Console.WriteLine("You entered: " + userInput);
+        Console.WriteLine("Invalid input. Please enter a valid role (Administrator, Manager, or User):");
     }
-}
+} while (userInput != "administrator" && userInput != "manager" && userInput != "user");
+
+Console.WriteLine("You entered: " + userInput);
+
