@@ -92,11 +92,11 @@ foreach (string name in studentNames)
 
 
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < examAssignments; i++)
     {
         sumExamScore += studentScores[i];
     }
-    decimal showSumExamScore = sumExamScore / 5;
+    decimal showSumExamScore = sumExamScore / examAssignments;
 
     extra += (int)showSumExamScore;
 
