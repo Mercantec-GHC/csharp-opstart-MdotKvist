@@ -13,3 +13,8 @@ for (int i = 0; i < coinsTotal; i++)
     Console.WriteLine($"You flipped a {result}!");
 }
 
+Console.Clear();
+
+string permission = "Admin|Manager";
+int level = 55;
+
