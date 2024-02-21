@@ -239,19 +239,42 @@
 //} while (!isValid);
 
 //Console.WriteLine("Du har indtastet: " + userInput);
-string userInput;
+//string userInput;
 
-Console.WriteLine("Please enter your role (Administrator, Manager, or User):");
+//Console.WriteLine("Please enter your role (Administrator, Manager, or User):");
 
-do
+//do
+//{
+//    userInput = Console.ReadLine().Trim().ToLower();
+
+//    if (userInput != "administrator" && userInput != "manager" && userInput != "user")
+//    {
+//        Console.WriteLine("Invalid input. Please enter a valid role (Administrator, Manager, or User):");
+//    }
+//} while (userInput != "administrator" && userInput != "manager" && userInput != "user");
+
+//Console.WriteLine("You entered: " + userInput);
+
+string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
+
+foreach (string myString in myStrings)
 {
-    userInput = Console.ReadLine().Trim().ToLower();
+    int periodLocation = myString.IndexOf(".");
 
-    if (userInput != "administrator" && userInput != "manager" && userInput != "user")
+    if (periodLocation != -1)
     {
-        Console.WriteLine("Invalid input. Please enter a valid role (Administrator, Manager, or User):");
+        string[] sentences = myString.Split('.');
+        foreach (string sentence in sentences)
+        {
+            string trimmedSentence = sentence.Trim();
+            if (!string.IsNullOrEmpty(trimmedSentence))
+            {
+                Console.WriteLine(trimmedSentence);
+            }
+        }
     }
-} while (userInput != "administrator" && userInput != "manager" && userInput != "user");
-
-Console.WriteLine("You entered: " + userInput);
-
+    else
+    {
+        Console.WriteLine(myString.Trim());
+    }
+}
