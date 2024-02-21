@@ -193,33 +193,29 @@
 //}
 //Console.WriteLine($"Last number: {current}");
 
-int heroHealth = 10;
-int monsterHealth = 10;
+//int heroHealth = 10;
+//int monsterHealth = 10;
+
+//do
+//{
+//    Random random = new Random();
+//    int attackDamage = random.Next(1, 11);
+
+//    monsterHealth -= attackDamage;
+//    Console.WriteLine($"Monster was damaged and lost {attackDamage} health and now has {monsterHealth} health");
+//    Random random1 = new Random();
+//    int attackDamage1 = random.Next(1, 11);
+//    heroHealth -= attackDamage;
+//    Console.WriteLine($"Hero was damaged and lost {attackDamage1} health and now has {heroHealth} health.");
 
 
+//} while (heroHealth <= 0 || monsterHealth <= 0);
 
-
-
-do
-{
-    Random random = new Random();
-    int attackDamage = random.Next(1, 11);
-
-    monsterHealth -= attackDamage;
-    Console.WriteLine($"Monster was damaged and lost {attackDamage} health and now has {monsterHealth} health");
-    Random random1 = new Random();
-    int attackDamage1 = random.Next(1, 11);
-    heroHealth -= attackDamage;
-    Console.WriteLine($"Hero was damaged and lost {attackDamage1} health and now has {heroHealth} health.");
-
-
-}  while (heroHealth <= 0 || monsterHealth <= 0);
-
-if (heroHealth <= 0)
-{
-    Console.WriteLine("Monser wins!");
-}
-else
-{
-    Console.WriteLine("Hero wins!");
-}
+//if (heroHealth <= 0)
+//{
+//    Console.WriteLine("Monser wins!");
+//}
+//else
+//{
+//    Console.WriteLine("Hero wins!");
+//}
