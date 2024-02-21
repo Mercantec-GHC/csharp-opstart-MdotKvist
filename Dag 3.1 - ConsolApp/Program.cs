@@ -209,13 +209,14 @@
 //    Console.WriteLine($"Hero was damaged and lost {attackDamage1} health and now has {heroHealth} health.");
 
 
-//} while (heroHealth <= 0 || monsterHealth <= 0);
+//} while (heroHealth > 0 || monsterHealth > 0);
 
 //if (heroHealth <= 0)
 //{
 //    Console.WriteLine("Monser wins!");
 //}
-//else
+//else if
 //{
 //    Console.WriteLine("Hero wins!");
 //}
+
