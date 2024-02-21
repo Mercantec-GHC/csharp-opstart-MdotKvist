@@ -222,22 +222,21 @@
 
 using System;
 
-        int userInput;
-        bool isValid = false;
+int userInput;
+bool isValid = false;
 
-        do
-        {
-            Console.WriteLine("Indtast et heltal:");
-            string input = Console.ReadLine();
+do
+{
+    Console.WriteLine("Indtast et heltal:");
+    string input = Console.ReadLine();
 
-            isValid = int.TryParse(input, out userInput);
+    isValid = int.TryParse(input, out userInput);
 
-            if (!isValid)
-            {
-                Console.WriteLine("Ugyldigt input. Prøv igen.");
-            }
+    if (!isValid)
+    {
+        Console.WriteLine("Ugyldigt input. Prøv igen.");
+    }
+} while (!isValid);
 
-        } while (!isValid);
-
-        Console.WriteLine("Du har indtastet: " + userInput);
+Console.WriteLine("Du har indtastet: " + userInput);
 
