@@ -238,21 +238,32 @@
 
 
 
-string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
-String [] orderStreamArray = orderStream.Split(',');
+//string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
+//String [] orderStreamArray = orderStream.Split(',');
 
-Array.Sort(orderStreamArray);
+//Array.Sort(orderStreamArray);
 
 
-foreach (string word in orderStreamArray)
-{
-    int charCount = word.Length;
-    if (charCount == 4)
-    {
-        Console.WriteLine($"{word}");
-    }
-    else
-    {
-        Console.WriteLine($"{word} -- error");
-    }
-}
+//foreach (string word in orderStreamArray)
+//{
+//    int charCount = word.Length;
+//    if (charCount == 4)
+//    {
+//        Console.WriteLine($"{word}");
+//    }
+//    else
+//    {
+//        Console.WriteLine($"{word} \t- error");
+//    }
+//}
+
+
+////string first = "Hello";
+////string second = "World";
+////string result = string.Format("{1} {0} ", first, second);
+////Console.WriteLine(result);
+
+//string first = "Hello";
+//string second = "World";
+//Console.WriteLine("{1} {0}!", first, second); 
+//Console.WriteLine("{0} {0} {0}!", first, second);
