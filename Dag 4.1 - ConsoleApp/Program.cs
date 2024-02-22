@@ -236,7 +236,7 @@
 //string result = string.Join(" ", pangramSplit);
 //Console.WriteLine(result);
 
-using System.Diagnostics.Tracing;
+
 
 string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
 String [] orderStreamArray = orderStream.Split(',');
@@ -247,15 +247,12 @@ Array.Sort(orderStreamArray);
 foreach (string word in orderStreamArray)
 {
     int charCount = word.Length;
-    if (charCount < 4)
+    if (charCount == 4)
     {
-        Console.WriteLine($"{word} -- error");
-    }
-    else if (charCount > 4) {
-        Console.WriteLine($"{word} .. error");
+        Console.WriteLine($"{word}");
     }
     else
     {
-        Console.WriteLine(word);
+        Console.WriteLine($"{word} -- error");
     }
 }
