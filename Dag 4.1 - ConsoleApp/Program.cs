@@ -267,3 +267,11 @@
 //string second = "World";
 //Console.WriteLine("{1} {0}!", first, second); 
 //Console.WriteLine("{0} {0} {0}!", first, second);
+
+//decimal price = 123.45m;
+//int discount = 50;
+//Console.WriteLine($"Price: {price:c} (Save {discount:c})");
+
+
+//decimal measurement = 123456.78912m;
+//Console.WriteLine($"Measurement: {measurement:N4} units");
