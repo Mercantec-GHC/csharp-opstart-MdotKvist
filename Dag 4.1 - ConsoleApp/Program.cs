@@ -295,3 +295,7 @@
 //Console.WriteLine($"   Shares: {productShares:N3} Product");
 //Console.WriteLine($"     Sub Total: {subtotal:C}");
 //Console.WriteLine($"           Tax: {taxPercentage:P2}");
+
+string input = "Pad this";
+Console.WriteLine(input.PadLeft(12, '-'));
+Console.WriteLine(input.PadRight(12, '-'));
