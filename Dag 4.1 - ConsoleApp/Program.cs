@@ -90,7 +90,7 @@ decimal value2 = 6.2m;
 float value3 = 4.3f;
 decimal value32float = 0;
 
-int result1 = Convert.ToInt32(value1 / value2);
+int result1 = Convert.ToInt32((decimal)value1 / value2);
 
 // Your code here to set result1
 // Hint: You need to round the result to nearest integer (don't just truncate)
