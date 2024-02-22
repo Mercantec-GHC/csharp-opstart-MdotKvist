@@ -359,3 +359,13 @@
 
 //comparisonMessage += String.Format("{0:C}", currentProfit).PadRight(20);
 //Console.WriteLine(comparisonMessage);
+string openingPostionText = "<span>";
+string closingPostionText = "</span>";
+string message = $"What is the value {openingPostionText}between the tags{closingPostionText}? ";
+
+int openingPosition = message.IndexOf(openingPostionText);
+int closingPosition = message.IndexOf(closingPostionText);
+
+openingPosition += openingPostionText.Length;
+int length = closingPosition - openingPosition;
+Console.WriteLine(message.Substring(openingPosition, length));
