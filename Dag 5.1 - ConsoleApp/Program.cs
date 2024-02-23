@@ -192,16 +192,72 @@
 
 //DisplayAdjustedTimes(schedule, 6, -6);
 
-string[] students = { "Jenna", "Ayesha", "Carlos", "Viktor" };
+//string[] students = { "Jenna", "Ayesha", "Carlos", "Viktor" };
 
-DisplayStudents(students);
-DisplayStudents(new string[] { "Robert", "Vanya" });
+//DisplayStudents(students);
+//DisplayStudents(new string[] { "Robert", "Vanya" });
 
-void DisplayStudents(string[] students)
-{
-    foreach (string student in students)
+//void DisplayStudents(string[] students)
+//{
+//    foreach (string student in students)
+//    {
+//        Console.Write($"{student}, ");
+//    }
+//    Console.WriteLine();
+//}
+
+
+//double pi = 3.14159;
+//PrintCircleInfo(12);
+//PrintCircleInfo(24);
+
+//void PrintCircleArea(int radius)
+//{
+//    double area = pi * (radius * radius);
+//    Console.WriteLine($"Area = {area}");
+//}
+
+//void PrintCircleCircumference(int radius)
+//{
+//    double circumference = 2 * pi * radius;
+//    Console.WriteLine($"Circumference = {circumference}");
+//}
+
+//void PrintCircleInfo(int radius)
+//{
+//    Console.WriteLine($"Circle with radius {radius}");
+//    PrintCircleArea(radius);
+//    PrintCircleCircumference(radius);
+//}
+
+
+string[,] corporate =
     {
-        Console.Write($"{student}, ");
-    }
-    Console.WriteLine();
+        {"Robert", "Bavin"}, {"Simon", "Bright"},
+        {"Kim", "Sinclair"}, {"Aashrita", "Kamath"},
+        {"Sarah", "Delucchi"}, {"Sinan", "Ali"}};
+
+string[,] external =
+{
+        {"Vinnie", "Ashton"}, {"Cody", "Dysart"},
+        {"Shay", "Lawrence"}, {"Daren", "Valdes"}
+    };
+
+string externalDomain = "hayworth.com";
+
+for (int i = 0; i < corporate.GetLength(0); i++)
+{
+    DisplayEmail(first: corporate[i, 0], last: corporate[i, 1]);
+}
+
+for (int i = 0; i < external.GetLength(0); i++)
+{
+    DisplayEmail(first: external[i, 0], last: external[i, 1], domain: externalDomain);
+}
+
+void DisplayEmail(string first, string last, string domain = "contoso.com")
+{
+    string email = first.Substring(0, 2) + last;
+    email = email.ToLower();
+    Console.WriteLine($"{email}@{domain}");
 }
